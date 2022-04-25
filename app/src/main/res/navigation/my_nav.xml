@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.pro.diversifam.ui.Login_Fragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.pro.diversifam.ui.SignUp_Fragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.pro.diversifam.ui.Events_Fragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_eventsFragment_to_joinEventFragment"
+            app:destination="@id/joinEventFragment" />
+        <action
+            android:id="@+id/action_eventsFragment_to_organizeEventfFragment"
+            app:destination="@id/organizeEventfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.pro.diversifam.ui.OTP_Fragment"
+        android:label="OTPFragment" >
+        <action
+            android:id="@+id/action_OTPFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/joinEventFragment"
+        android:name="com.pro.diversifam.ui.JoinEvent_Fragment"
+        android:label="fragment_join_event"
+        tools:layout="@layout/fragment_join_event" />
+    <fragment
+        android:id="@+id/organizeEventfFragment"
+        android:name="com.pro.diversifam.ui.OrganizeEvent_Fragment"
+        android:label="fragment_organize_eventf"
+        tools:layout="@layout/fragment_organize_event" />
+</navigation>
