@@ -12,7 +12,8 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     android:textSize="40sp"
-    android:layout_margin="50dp"
+    android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
     android:text="Sign-Up"
         android:fontFamily="@font/ewert"
     android:layout_width="wrap_content"
@@ -26,6 +27,7 @@
         android:layout_margin="20dp">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FirstName_container"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:layout_constraintTop_toTopOf="parent"
             android:hint="First Name -"
@@ -35,6 +37,92 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FirsName_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/FirstName_container"
+            android:id="@+id/LastName_container"
+            android:layout_marginTop="10dp"
+            android:hint="Last Name -"
+            app:helperTextEnabled="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LastName_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/LastName_container"
+            android:id="@+id/Age_container"
+            android:layout_marginTop="10dp"
+            android:hint="Age -"
+            app:helperTextEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="number"
+                android:id="@+id/Age_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/Age_container"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Religion_Container"
+            android:hint="Religion -"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Religion_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/Religion_Container"
+            android:id="@+id/Email_Container"
+            android:hint="Email -"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintTop_toBottomOf="@id/Email_Container"
+            android:id="@+id/Address_Container"
+            android:hint="Address -"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Address"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 
@@ -44,12 +132,16 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/SignUp_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_margin="20dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:elevation="10dp"
         android:text="SignUp"
         android:textAllCaps="false"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="20sp"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextFieldsContainer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
