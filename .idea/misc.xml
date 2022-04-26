@@ -6,16 +6,19 @@
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/drawable/curved_button.xml" value="0.142" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/drawable/custom_input.xml" value="0.128" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/drawable/gradient.xml" value="0.145" />
+        <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/drawable/gradient_dark.xml" value="0.1315" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/drawable/next.xml" value="0.142" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/events_card_for_recycler.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/events_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/fragment_events.xml" value="0.264" />
+        <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/fragment_join_event.xml" value="0.259375" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/fragment_o_t_p.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/fragment_organize_event.xml" value="0.176" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/fragment_organize_eventf.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/fragment_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/join_event_recycler.xml" value="0.259375" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/join_event_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/login_screen.xml" value="0.2" />
         <entry key="..\:/Users/anany/StudioProjects/diversifam/app/src/main/res/layout/organize_event_screen.xml" value="0.25416666666666665" />
