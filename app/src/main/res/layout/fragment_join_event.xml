@@ -97,6 +97,7 @@
         app:layout_constraintTop_toBottomOf="@id/RequestsHeading_ttv">
 
         <androidx.recyclerview.widget.RecyclerView
+
             android:id="@+id/RequestsRecycler"
             android:layout_width="match_parent"
             android:layout_height="260dp"
