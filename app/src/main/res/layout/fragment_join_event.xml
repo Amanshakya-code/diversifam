@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.JoinEvent_Fragment"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/JointEventImageContainer"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
 
         <ImageView
             android:id="@+id/JoinEventImageView"
@@ -21,11 +22,13 @@
             android:layout_width="match_parent"
             android:layout_height="170dp"/>
 
+
         <ImageView
             android:src="@drawable/gradient_dark"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_width="match_parent"
             android:layout_height="40dp"/>
+
 
         <TextView
             android:id="@+id/JoinEventOrganizerName_ttv"
@@ -37,6 +40,7 @@
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -52,6 +56,7 @@
         android:layout_height="wrap_content"
         android:text="Description"/>
 
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/JoinEventDescription_ttv"
         app:layout_constraintTop_toBottomOf="@id/DescriptionHeading_ttv"
@@ -61,10 +66,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <ImageView
             android:src="#F4B3B3"
             android:layout_width="match_parent"
             android:layout_height="150dp"/>
+
 
         <TextView
             android:text="The event Description."
@@ -73,7 +80,9 @@
             android:layout_width="match_parent"
             android:layout_height="130dp"/>
 
+
     </com.google.android.material.card.MaterialCardView>
+
 
     <TextView
         android:id="@+id/RequestsHeading_ttv"
@@ -86,6 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,14 +106,16 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintTop_toBottomOf="@id/RequestsHeading_ttv">
 
-        <androidx.recyclerview.widget.RecyclerView
 
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/RequestsRecycler"
             android:layout_width="match_parent"
             android:layout_height="260dp"
             tools:listitem="@layout/join_event_recycler"
             android:padding="10dp" />
 
+
     </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
